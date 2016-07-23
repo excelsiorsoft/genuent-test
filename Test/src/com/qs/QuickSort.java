@@ -12,36 +12,7 @@ package com.qs;
  */
 public class QuickSort {
 	
-/*	public static void exec(int[] array, int start, int end) {
-	    if (start < end) {
-	        int partition = partition(array, start, end);
-	        System.out.println("partition:" +  partition);
-	        exec(array, start, partition);
-	        exec(array, partition + 1, end);
-	    }
-	}
-	
-	public static int partition(int[] array, int left, int right) {
-	    int pivotValue = array[(left + right) / 2]; 
-	    while (left <= right) {
-	        while (array[left] < pivotValue) {
-	            left++;
-	        }
-	        while (array[right] > pivotValue) {
-	            right++;
-	        }
-	        if (left <= right) {
-	            
-	            int temporary = array[left];
-	            array[left] = array[right];
-	            array[right] = temporary;
 
-	            left++;
-	            right--;
-	        }
-	    }
-	    return left;
-	}	*/
 
 	public static void quickSort(int[] array) {
         recursiveQuickSort(array, 0, array.length - 1);
